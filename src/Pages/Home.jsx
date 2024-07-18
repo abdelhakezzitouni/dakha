@@ -10,10 +10,10 @@ function Home() {
 
 //-----------zarbia---------------
   
-  const cusZarbia = ZarbiaData.filter(i=>i.id <= 4);
+  const cusZarbia = ZarbiaData.filter(i=>i.id <= 3);
   const zarbiaMap =(item)=>{
     return (
-          <div onClick={()=>LinkBtn(`/zarbia/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-xl relative'>
+          <div onClick={()=>LinkBtn(`/zarbia/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
               <img src={item.img} className=' w-36 rotate-90 object-cover' />
               <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                   <div>
@@ -33,10 +33,10 @@ function Home() {
 
   //------------tagines--------------
 
-  const cusTagines = TaginesData.filter(i => i.id <=4);
+  const cusTagines = TaginesData.filter(i => i.id <=3);
   const  taginesMap =(item)=>{
     return (
-          <div onClick={()=>LinkBtn(`/tagines/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-xl relative'>
+          <div onClick={()=>LinkBtn(`/tagines/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
               <img src={item.img} className=' w-36  object-cover' />
               <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                   <div>
@@ -58,7 +58,7 @@ function Home() {
   const cusTeapots = TeapotsData.filter(i=> i.id <=3);
   const teapotsMap = (item)=>{
     return (
-          <div onClick={()=>LinkBtn(`/teapots/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-xl relative'>
+          <div onClick={()=>LinkBtn(`/teapots/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
               <img src={item.img} className=' w-36  object-cover' />
               <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                   <div>

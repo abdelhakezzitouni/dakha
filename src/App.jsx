@@ -1,6 +1,6 @@
 //import pages
 
-import { Route, RouterProvider, createBrowserRouter, createHashRouter, createRoutesFromElements } from "react-router-dom";
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import Home from "./Pages/Home";
 import Zarbia from "./Pages/Zarbia";
 import Tagines from "./Pages/Tagines";
@@ -13,7 +13,7 @@ import TeapotsDetails from "./Pages/TeapotsDetails";
 
 function App() {
 
-  const router = createHashRouter(
+  const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" Component={Layout}>
         <Route index Component={Home} />

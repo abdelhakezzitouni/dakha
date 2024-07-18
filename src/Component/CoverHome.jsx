@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from '../Assets/Images/Home/home1.jpg'
-import img2 from '../Assets/Images/Home/home2.jpg'
-import img3 from '../Assets/Images/Home/home3.jpg'
+import img1 from '../Assets/Images/Home/h1.jpg'
+import img2 from '../Assets/Images/Home/h2.jpg'
+import img3 from '../Assets/Images/Home/h3.jpg'
 
 function CoverHome() {
   return (

@@ -8,7 +8,7 @@ function Teapots() {
   const funMap = (item) => {
     return (
         <Link to={`/teapots/${item.slug}`}>
-            <div key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-xl relative'>
+            <div key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
                 <img src={item.img} className=' w-48' />
                 <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                     <div>
