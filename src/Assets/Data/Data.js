@@ -1,24 +1,24 @@
 //import image tagines
-import imgTagine1 from '../Images/Tagines/t1.png'
-import imgTagine2 from '../Images/Tagines/t2.png'
-import imgTagine3 from '../Images/Tagines/t3.png'
-import imgTagine4 from '../Images/Tagines/t4.png'
-import imgTagine5 from '../Images/Tagines/t5.png'
-import imgTagine6 from '../Images/Tagines/t6.png'
+import imgTagine1 from '../Images/Tagines/tt1.png'
+import imgTagine2 from '../Images/Tagines/tt2.png'
+import imgTagine3 from '../Images/Tagines/tt3.png'
+import imgTagine4 from '../Images/Tagines/tt4.png'
+import imgTagine5 from '../Images/Tagines/tt5.png'
+import imgTagine6 from '../Images/Tagines/tt6.png'
 
 //import image teapots
-import imgTeapots1 from '../Images/Teapots/b2.png'
-import imgTeapots2 from '../Images/Teapots/b3.png'
-import imgTeapots3 from '../Images/Teapots/b4.png'
+import imgTeapots1 from '../Images/Teapots/bb2.png'
+import imgTeapots2 from '../Images/Teapots/bb3.png'
+import imgTeapots3 from '../Images/Teapots/bb4.png'
 
 //import image zarbia
 
-import imgZarbia1 from '../Images/Zarbia/z1.png'
-import imgZarbia2 from '../Images/Zarbia/z2.png'
-import imgZarbia3 from '../Images/Zarbia/z3.png'
-import imgZarbia4 from '../Images/Zarbia/z4.png'
-import imgZarbia5 from '../Images/Zarbia/z5.png'
-import imgZarbia6 from '../Images/Zarbia/z6.png'
+import imgZarbia1 from '../Images/Zarbia/zz1.png'
+import imgZarbia2 from '../Images/Zarbia/zz2.png'
+import imgZarbia3 from '../Images/Zarbia/zz3.png'
+import imgZarbia4 from '../Images/Zarbia/zz4.png'
+import imgZarbia5 from '../Images/Zarbia/zz5.png'
+import imgZarbia6 from '../Images/Zarbia/zz6.png'
 
 
 export const TaginesData =[
