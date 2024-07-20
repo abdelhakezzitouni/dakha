@@ -13,7 +13,7 @@ function Home() {
   const cusZarbia = ZarbiaData.filter(i=>i.id <= 3);
   const zarbiaMap =(item)=>{
     return (
-          <div onClick={()=>LinkBtn(`/zarbia/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
+          <div onClick={()=>LinkBtn(`/zarbia/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-2xl duration-300 relative'>
               <img src={item.img} className=' w-36 rotate-90 object-cover' />
               <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                   <div>
@@ -36,7 +36,7 @@ function Home() {
   const cusTagines = TaginesData.filter(i => i.id <=3);
   const  taginesMap =(item)=>{
     return (
-          <div onClick={()=>LinkBtn(`/tagines/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
+          <div onClick={()=>LinkBtn(`/tagines/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-2xl duration-300 relative'>
               <img src={item.img} className=' w-36  object-cover' />
               <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                   <div>
@@ -58,7 +58,7 @@ function Home() {
   const cusTeapots = TeapotsData.filter(i=> i.id <=3);
   const teapotsMap = (item)=>{
     return (
-          <div onClick={()=>LinkBtn(`/teapots/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
+          <div onClick={()=>LinkBtn(`/teapots/${item.slug}`)} key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-2xl duration-300 relative'>
               <img src={item.img} className=' w-36  object-cover' />
               <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                   <div>
@@ -88,7 +88,7 @@ function Home() {
           <h1 className=' border-l-4 border-red-500 text-xl font-semibold'>Moroccan Zrbia</h1>
           <h1 onClick={()=>LinkBtn(`/zarbia`)} className=' cursor-pointer hover:underline'>See More</h1>
         </div>
-        <div className='grid lg:grid-cols-lg grid-cols-sm md:grid-cols-md justify-center  gap-8  mt-12'>
+        <div className='grid lg:grid-cols-lg grid-cols-sm sm:grid-cols-md justify-center  gap-8  mt-12'>
           {cusZarbia.map(zarbiaMap)}
         </div>
       </div>
@@ -100,7 +100,7 @@ function Home() {
           <h1 className=' border-l-4 border-red-500 text-xl font-semibold'>Moroccan Tagines</h1>
           <h1 onClick={()=>LinkBtn(`/tagines`)} className=' cursor-pointer hover:underline'>See More</h1>
         </div>
-        <div className='grid lg:grid-cols-lg grid-cols-sm md:grid-cols-md justify-center  gap-8  mt-12'>
+        <div className='grid lg:grid-cols-lg grid-cols-sm sm:grid-cols-md justify-center  gap-8  mt-12'>
           {cusTagines.map(taginesMap)}
         </div>
       </div>
@@ -112,7 +112,7 @@ function Home() {
           <h1 className=' border-l-4 border-red-500 text-lg font-semibold'>Moroccan Teapots</h1>
           <h1 onClick={()=>LinkBtn(`/teapots`)} className=' cursor-pointer hover:underline'>See More</h1>
         </div>
-        <div className='grid lg:grid-cols-lg grid-cols-sm md:grid-cols-md justify-center  gap-8  mt-12'>
+        <div className='grid lg:grid-cols-lg grid-cols-sm sm:grid-cols-md justify-center  gap-8  mt-12'>
           {cusTeapots.map(teapotsMap)}
         </div>
       </div>

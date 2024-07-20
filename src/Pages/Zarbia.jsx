@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { ZarbiaData } from '../Assets/Data/Data'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ function Zarbia() {
   const funMap = (item) => {
     return (
         <Link to={`/zarbia/${item.slug}`}>
-            <div key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-xl duration-300 relative'>
+            <div key={item.id} className='w-full bg-transparent cursor-pointer rounded-xl flex flex-col items-center shadow-md hover:shadow-2xl duration-300 relative'>
                 <img src={item.img} className=' w-36 rotate-90 object-cover' />
                 <div className='bg-[#2B2D42] w-full text-white h-20 rounded-b-xl flex justify-between items-center px-8'>
                     <div>
@@ -27,11 +27,18 @@ function Zarbia() {
     );
 }
 
-  return (
+    const toTopRef = useRef(null);
+    useEffect(()=>{
+        window.scroll(0,0)
+    },[])
 
-    <div className='grid lg:grid-cols-lg grid-cols-sm md:grid-cols-md justify-center  gap-8  mt-12'>
+  return (
+    <>
+    <span ref={toTopRef}></span>
+    <div className='grid lg:grid-cols-lg grid-cols-sm sm:grid-cols-md justify-center  gap-8  mt-12'>
         {ZarbiaData.map(funMap)}
     </div>
+    </>
   )
 }
 
