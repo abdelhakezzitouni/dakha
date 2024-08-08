@@ -5,8 +5,8 @@
   "type": "module",
   "homepage": "https://abdelhakezzitouni.github.io/dakhla-ecommerce-website",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -14,14 +14,22 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.19",
     "gsap": "^3.12.5",
+    "lucide": "^0.418.0",
+    "lucide-react": "^0.418.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.0",
     "swiper": "^11.1.4",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
@@ -31,8 +39,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "gh-pages": "^6.1.1",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
     "vite": "^5.2.0"
   }
 }

@@ -21,14 +21,148 @@ import imgZarbia5 from '../Images/Zarbia/zz5.png'
 import imgZarbia6 from '../Images/Zarbia/zz6.png'
 
 
-export const TaginesData =[
+// export const TaginesData =[
+//     {
+//         id:1,
+//         title:'tagines modul 1',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTagine1,
+//         slug:'tagines-modul-1'
+//     },
+//     {
+//         id:2,
+//         title:'tagines modul 2',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTagine2,
+//         slug:'tagines-modul-2'
+//     },
+//     {
+//         id:3,
+//         title:'tagines modul 3',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTagine3,
+//         slug:'tagines-modul-3'
+//     },
+//     {
+//         id:4,
+//         title:'tagines modul 4',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTagine4,
+//         slug:'tagines-modul-4'
+//     },{
+//         id:5,
+//         title:'tagines modul 5',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTagine5,
+//         slug:'tagines-modul-5'
+//     },{
+//         id:6,
+//         title:'tagines modul 6',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTagine6,
+//         slug:'tagines-modul-6'
+//     },
+    
+
+// ]
+
+// export const TeapotsData = [
+//     {
+//         id:1,
+//         title:'teapots modul 1',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTeapots1,
+//         slug:'teapots-modul-1'
+//     },
+//     {
+//         id:2,
+//         title:'teapots modul 2',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTeapots2,
+//         slug:'teapots-modul-2'
+//     },
+//     {
+//         id:3,
+//         title:'teapots modul 3',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgTeapots3,
+//         slug:'teapots-modul-3'
+//     }
+// ]
+
+
+// export const ZarbiaData = [
+//     {
+//         id:1,
+//         title:'zarbia modul 1',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgZarbia1,
+//         slug:'zarbia-modul-1'
+//     },
+//     {
+//         id:2,
+//         title:'zarbia modul 2',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgZarbia2,
+//         slug:'zarbia-modul-2'
+//     },
+//     {
+//         id:3,
+//         title:'zarbia modul 3',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgZarbia3,
+//         slug:'zarbia-modul-3'
+//     },
+//     {
+//         id:4,
+//         title:'zarbia modul 4',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgZarbia4,
+//         slug:'zarbia-modul-4'
+//     },
+//     {
+//         id:5,
+//         title:'zarbia modul 5',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgZarbia5,
+//         slug:'zarbia-modul-5'
+//     },
+//     {
+//         id:6,
+//         title:'zarbia modul 6',
+//         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+//         price:120,
+//         img:imgZarbia6,
+//         slug:'zarbia-modul-6'
+//     },
+    
+// ]
+
+
+export const  data =[
     {
         id:1,
         title:'tagines modul 1',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTagine1,
-        slug:'tagines-modul-1'
+        slug:'tagines-modul-1',
+        category:'tagines',
+        popular:true
     },
     {
         id:2,
@@ -36,7 +170,9 @@ export const TaginesData =[
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTagine2,
-        slug:'tagines-modul-2'
+        slug:'tagines-modul-2',
+        category:'tagines',
+        popular:false
     },
     {
         id:3,
@@ -44,7 +180,9 @@ export const TaginesData =[
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTagine3,
-        slug:'tagines-modul-3'
+        slug:'tagines-modul-3',
+        category:'tagines',
+        popular:true
     },
     {
         id:4,
@@ -52,102 +190,149 @@ export const TaginesData =[
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTagine4,
-        slug:'tagines-modul-4'
-    },{
+        slug:'tagines-modul-4',
+        category:'tagines',
+        popular:true
+    },
+    {
         id:5,
         title:'tagines modul 5',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTagine5,
-        slug:'tagines-modul-5'
-    },{
+        slug:'tagines-modul-5',
+        category:'tagines',
+        popular:false
+    },
+    {
         id:6,
         title:'tagines modul 6',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTagine6,
-        slug:'tagines-modul-6'
+        slug:'tagines-modul-6',
+        category:'tagines',
+        popular:false
     },
-    
-
-]
-
-export const TeapotsData = [
     {
-        id:1,
+        id:7,
         title:'teapots modul 1',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTeapots1,
-        slug:'teapots-modul-1'
+        slug:'teapots-modul-1',
+        category:'teapots',
+        popular:false
     },
     {
-        id:2,
+        id:8,
         title:'teapots modul 2',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTeapots2,
-        slug:'teapots-modul-2'
+        slug:'teapots-modul-2',
+        category:'teapots',
+        popular:true
     },
     {
-        id:3,
+        id:9,
         title:'teapots modul 3',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgTeapots3,
-        slug:'teapots-modul-3'
-    }
-]
-
-
-export const ZarbiaData = [
+        slug:'teapots-modul-3',
+        category:'teapots',
+        popular:true
+    },
     {
-        id:1,
+        id:10,
+        title:'teapots modul 4',
+        description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+        price:120,
+        img:imgTeapots1,
+        slug:'teapots-modul-4',
+        category:'teapots',
+        popular:false
+    },
+    {
+        id:11,
+        title:'teapots modul 5',
+        description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+        price:120,
+        img:imgTeapots2,
+        slug:'teapots-modul-5',
+        category:'teapots',
+        popular:true
+    },
+    {
+        id:12,
+        title:'teapots modul 6',
+        description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
+        price:120,
+        img:imgTeapots3,
+        slug:'teapots-modul-6',
+        category:'teapots',
+        popular:false
+    },
+    {
+        id:13,
         title:'zarbia modul 1',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgZarbia1,
-        slug:'zarbia-modul-1'
+        slug:'zarbia-modul-1',
+        category:'zarbia',
+        popular:true
     },
     {
-        id:2,
+        id:14,
         title:'zarbia modul 2',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgZarbia2,
-        slug:'zarbia-modul-2'
+        slug:'zarbia-modul-2',
+        category:'zarbia',
+        popular:true
     },
     {
-        id:3,
+        id:15,
         title:'zarbia modul 3',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgZarbia3,
-        slug:'zarbia-modul-3'
+        slug:'zarbia-modul-3',
+        category:'zarbia',
+        popular:true
     },
     {
-        id:4,
+        id:16,
         title:'zarbia modul 4',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgZarbia4,
-        slug:'zarbia-modul-4'
+        slug:'zarbia-modul-4',
+        category:'zarbia',
+        popular:false
     },
     {
-        id:5,
+        id:17,
         title:'zarbia modul 5',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgZarbia5,
-        slug:'zarbia-modul-5'
+        slug:'zarbia-modul-5',
+        category:'zarbia',
+        popular:false
     },
     {
-        id:6,
+        id:18,
         title:'zarbia modul 6',
         description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ipsum ducimus architecto ipsa repellat cumque. Ducimus.',
         price:120,
         img:imgZarbia6,
-        slug:'zarbia-modul-6'
+        slug:'zarbia-modul-6',
+        category:'zarbia',
+        popular:false
     },
-    
+
 ]

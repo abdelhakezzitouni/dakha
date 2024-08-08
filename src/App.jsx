@@ -1,37 +1,32 @@
 //import pages
 
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
-import Home from "./Pages/Home";
-import Zarbia from "./Pages/Zarbia";
-import Tagines from "./Pages/Tagines";
-import Teapots from "./Pages/Teapots";
-import Layout from "./Component/Layout";
-import TaginesDetails from "./Pages/TaginesDetails";
-import ZarbiaDetails from "./Pages/ZarbiaDetails";
-import TeapotsDetails from "./Pages/TeapotsDetails";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./app/Home/Home";
+import Header from "./app/Layout/Header";
+import Zarbia from "./app/Zarbia/Zarbia";
+import Tagines from "./app/Tagines/Tagines";
+import Teapots from "./app/Teapots/Teapots";
+import Details from "./app/Layout/Details";
+import Footer from "./app/Layout/Footer";
 
 
 function App() {
-
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" Component={Layout}>
-        <Route index Component={Home} />
-        <Route path="/zarbia" Component={Zarbia} />
-        <Route path="/zarbia/:slug" Component={ZarbiaDetails} />
-        <Route path="/tagines" Component={Tagines} />
-        <Route path="/tagines/:slug" Component={TaginesDetails} />
-        <Route path="/teapots" Component={Teapots} />
-        <Route path="/teapots/:slug" Component={TeapotsDetails} />
-      </Route>
-    )
-  )
   
   return (
-    
-   <div className="overflow-x-hidden" >
-   <RouterProvider router={router}/>
-   </div>
+    <>
+    <Router>
+      <Header />
+      <Routes >
+        <Route path="/" Component={Home} />
+        <Route path="/:id" Component={Details} />
+        <Route path="/zarbia" Component={Zarbia} />
+        <Route path="/tagines" Component={Tagines} />
+        <Route path="/teapots" Component={Teapots} />
+      </Routes>
+      <Footer />
+    </Router>
+    </>
   );
 }
 
